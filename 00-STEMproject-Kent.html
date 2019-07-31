@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>STEM Project</title>
+		<script>
+		</script>	
+	</head>
+	<body>
+	  iPhone Battery Chage Time Caleculater
+	    <form name="js">
+         Your remainig battery：<input type="text" name="txtb" value="">% to 100%<br> 
+               <input type="button" value="OK" onclick="tbox1()"><br>
+               <input type="button" value="Reset" onclick="clr()"><br>
+        </form>
+			
+		<script>
+		//caleclate iPone battery chage time
+		function tbox1(){
+
+        var str1=document.js.txtb.value;
+        str1=(100-str1)/1.85
+        
+        //round off decimal point
+		var a = 123.456;
+        var result = Math.round(str1);
+		
+        alert("You need "+result+" min for full charge");
+}
+
+
+//テキストボックスの文字を操作する
+function clr(){
+
+  document.js.txtb.value="";
+
+}
+		
+		</script>
+		
+	</body>
+</html>
